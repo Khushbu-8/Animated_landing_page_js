@@ -1,0 +1,240 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d0d4d5;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+  
+
+}
+.nav img{
+    height: 80px;
+}
+.nav-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2vw;
+    font-size: 1.3vw;
+    text-transform:uppercase ;
+    cursor: pointer;
+}
+
+.nav-center h5:hover{
+    opacity: .6;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3vw;
+    font-size: 1.5vw;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-left{
+    width: 35%;
+    height: 100%;
+    padding: 5vw 3vw;
+
+}
+.content-right{
+    width: 65%;
+   height: 100%;
+    /* background-color: blue; */
+    position: relative;
+    padding:20px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+/* .content-right::-webkit-scrollbar{
+    display: none;
+} */
+.content-left span{
+    opacity: .5;
+    font-size: 1.1vw;
+
+}
+.content-left h1{
+    font-size: 3.5vw;
+    padding: 2vw 0;
+    text-transform: uppercase;
+
+
+}
+.content-left p{
+    font-size: 1.3vw;
+    font-weight: 500;
+    opacity: .6;
+    padding-bottom: 2vw;
+
+}
+.content-left button{
+    width: 50%;
+    font-size: 1.2vw;
+    padding: 1vw 3vw;
+    background-color: black;
+    color: #fff;
+    border: 0;
+    border-radius:0 50px 50px 50px;
+
+}
+.elem{
+    height: 400px;
+    width:300px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 8px;
+    margin-left: 20px;
+    display: inline-block;
+    overflow: hidden;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3) ;
+}
+.elem img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    position: absolute;
+    top: 20%;
+}
+.elem:nth-child(2) img{
+   top: 10%;
+}
+.elem:nth-child(3) img{
+    top: 15%;
+ }
+.elem:nth-child(5) img{
+    top: 15%;
+    height: 60%;
+ }
+.elem:nth-child(4) img{
+   top: -30%;
+   height: 100%;
+ 
+}
+.elem h4{
+    font-size: .8vw;
+    background-color: black;
+    color: #fff;
+    width: 45% ;
+    height: 3.5vw;
+    padding: 1.5vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 10px;
+    position: absolute;
+    bottom: 13%;
+    right: 0;
+}
+.elem h5{
+    font-size: 1vw;
+    background-color: #d0d4d5;
+    color: #000;
+    width: 60% ;
+    height: 4vw;
+    padding: 1.5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@media (max-width:500px) {
+    .nav-center{
+        display: none;
+    }
+    .content{
+      flex-direction: column;
+     display: flex;
+      align-items:  center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+     
+      height: calc(100% - 70px);
+    }
+    .content .content-left{
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-left span{
+        font-size: 3vw;
+    }
+    .content-left h1{
+        font-size: 7vw;
+    }
+    .content-left p{
+        font-size: 2vw;
+    }
+    .content-left button{
+        font-size: 2vw;
+       
+    }
+    .content-right{
+        width: 100%;
+       height: 100%!important;
+    padding: 0;
+    display: inline-block;
+    justify-content: center;
+    overflow-y: auto;
+    
+    flex-direction: column;
+      
+    }
+    .elem{
+       
+        background-color: #fff;
+        border-radius: 8px;
+        margin: 20px;
+        display: block; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .elem h4{
+        width: 40%;
+        height: 11vw;
+        font-size: 2vw;
+    }
+    .elem h5{
+        width: 60%;
+        height: 11vw;
+        font-size: 2.5vw;
+    }
+    
+}
